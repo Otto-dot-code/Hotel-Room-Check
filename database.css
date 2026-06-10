@@ -251,5 +251,35 @@ cursor:pointer;
 
 }
 
+@media screen and (max-width:768px){
+
+    .top{
+
+        display:grid;
+        grid-template-columns:1fr;
+
+    }
+
+    .filter{
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+        width:100%;
+
+    }
+
+    .filter button{
+
+        flex:1;
+        min-width:80px;
+
+    }
+
+    .hapusSemua{
+
+        width:100%;
+       
+
 
 
