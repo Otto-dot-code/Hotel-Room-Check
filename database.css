@@ -251,41 +251,5 @@ cursor:pointer;
 
 }
 
-/* ===========================
-   RESPONSIVE HP
-=========================== */
 
-@media screen and (max-width:768px){
-
-    .top{
-
-        display:flex;
-        flex-direction:column;
-        align-items:stretch;
-        gap:10px;
-
-    }
-
-    .filter{
-
-        display:flex;
-        flex-wrap:wrap;
-        gap:10px;
-
-    }
-
-    .filter button{
-
-        flex:1;
-        min-width:90px;
-
-    }
-
-    .hapusSemua{
-
-        width:100%;
-
-    }
-
-}
 
