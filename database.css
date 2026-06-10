@@ -81,15 +81,13 @@ margin:25px auto;
 
 display:flex;
 
-justify-content:space-between;
+flex-direction:column;
 
-align-items:center;
+align-items:stretch;
+
+gap:10px;
 
 margin-bottom:20px;
-
-  flex-wrap:wrap;
-
-    gap:10px;
 
 }
 
@@ -251,35 +249,42 @@ cursor:pointer;
 
 }
 
+/* =======================
+   Responsive HP
+======================= */
+
 @media screen and (max-width:768px){
 
+    .container{
+        width:95%;
+    }
+
     .top{
-
-        display:grid;
-        grid-template-columns:1fr;
-
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
     }
 
     .filter{
-
         display:flex;
         flex-wrap:wrap;
         gap:10px;
         width:100%;
-
     }
 
     .filter button{
-
-        flex:1;
-        min-width:80px;
-
+        flex:1 1 45%;
     }
 
     .hapusSemua{
-
         width:100%;
     }
 
+    .judul{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+    }
 
-
+}
