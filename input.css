@@ -24,6 +24,7 @@ body{
     align-items:center;
 
     padding:15px 35px;
+    flex-wrap: wrap;
 
 }
 
@@ -42,6 +43,7 @@ body{
     list-style:none;
 
     gap:20px;
+    flex-wrap: wrap;
 
 }
 
@@ -67,8 +69,8 @@ body{
 
 .container{
 
-    width:75%;
-
+    width:95%;
+    max-width: 1200px;
     margin:25px auto;
 
 }
@@ -194,5 +196,117 @@ textarea{
 #btnSimpan:hover{
 
     background:#1d4fd7;
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media screen and (max-width:768px){
+
+    .navbar{
+
+        flex-direction:column;
+        text-align:center;
+        gap:15px;
+
+    }
+
+    .navbar ul{
+
+        justify-content:center;
+        gap:10px;
+
+    }
+
+    .container{
+
+        width:95%;
+        margin:15px auto;
+
+    }
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .header h1{
+
+        font-size:24px;
+
+    }
+
+    .card{
+
+        padding:15px;
+
+    }
+
+    input,
+    select,
+    textarea{
+
+        font-size:16px;
+
+    }
+
+    #btnSimpan{
+
+        font-size:16px;
+
+        padding:14px;
+
+    }
+
+}
+
+@media screen and (max-width:480px){
+
+    .navbar{
+
+        padding:10px;
+
+    }
+
+    .navbar h2{
+
+        font-size:22px;
+
+    }
+
+    .logo p{
+
+        font-size:11px;
+
+    }
+
+    .navbar a{
+
+        padding:8px 12px;
+
+        font-size:14px;
+
+    }
+
+    .header{
+
+        padding:15px;
+
+    }
+
+    .header h1{
+
+        font-size:20px;
+
+    }
+
+    .card{
+
+        padding:12px;
+
+    }
 
 }
