@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hotel Room Check</title>
+
+    <link rel="stylesheet" href="input.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <h2>Hotel Room Check</h2>
+        <p>SISTEM PENGECEKAN KAMAR</p>
+
+    </div>
+
+    <ul>
+
+        <li><a class="active" href="index.html">Input</a></li>
+        <li><a href="database.html">Database</a></li>
+        <li><a href="print.html">Print</a></li>
+
+    </ul>
+
+</nav>
+
+<!-- ================= CONTAINER ================= -->
+
+<div class="container">
+
+    <div class="header">
+
+        <h1>Form Pengecekan Kamar</h1>
+
+        <p>Silahkan isi data pengecekan kamar</p>
+
+    </div>
+
+    <form id="formInput">
+
+        <!-- Data Kamar -->
+
+        <div class="card">
+
+            <h3>Data Kamar</h3>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Lantai</label>
+
+                    <select id="lantai">
+
+                        <option value="">Pilih Lantai</option>
+
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label>Nomor Kamar</label>
+
+                    <input
+                    type="text"
+                    id="nomor"
+                    placeholder="Contoh : 101">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Door Lock -->
+
+        <div class="card">
+
+            <h3>Door Lock</h3>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Waktu Before</label>
+
+                    <input
+                    type="time"
+                    id="before">
+
+                </div>
+
+                <div>
+
+                    <label>Waktu After</label>
+
+                    <input
+                    type="time"
+                    id="after">
+
+                </div>
+
+            </div>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Expired Bulan</label>
+
+                    <select id="bulan">
+
+                        <option>Januari</option>
+                        <option>Februari</option>
+                        <option>Maret</option>
+                        <option>April</option>
+                        <option>Mei</option>
+                        <option>Juni</option>
+                        <option>Juli</option>
+                        <option>Agustus</option>
+                        <option>September</option>
+                        <option>Oktober</option>
+                        <option>November</option>
+                        <option>Desember</option>
+
+                    </select>
+
+                </div>
+
+                <div>
+
+                    <label>Expired Tahun</label>
+
+                    <select id="tahun">
+
+                        <option>2026</option>
+                        <option>2025</option>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+            <label>Catatan Door Lock</label>
+
+            <textarea
+            id="catatanDoor"
+            rows="3"
+            placeholder="Masukkan catatan..."></textarea>
+
+        </div>
+
+        <!-- Access Point -->
+
+        <div class="card">
+
+            <h3>Access Point</h3>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Frekuensi 2.4 GHz</label>
+
+                    <input
+                    type="text"
+                    id="freq24"
+                    placeholder="Contoh : 2412 MHz">
+
+                </div>
+
+                <div>
+
+                    <label>Power DB</label>
+
+                    <input
+                    type="text"
+                    id="power24"
+                    placeholder="Contoh : 20">
+
+                </div>
+
+            </div>
+
+            <div class="grid">
+
+                <div>
+
+                    <label>Frekuensi 5 GHz</label>
+
+                    <input
+                    type="text"
+                    id="freq5"
+                    placeholder="Contoh : 5180 MHz">
+
+                </div>
+
+                <div>
+
+                    <label>Power DB</label>
+
+                    <input
+                    type="text"
+                    id="power5"
+                    placeholder="Contoh : 18">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Channel TV -->
+
+        <div class="card">
+
+            <h3>Channel TV Rusak</h3>
+
+            <input
+            type="text"
+            id="channel"
+            placeholder="Masukkan channel yang rusak">
+
+        </div>
+
+        <!-- Catatan -->
+
+        <div class="card">
+
+            <h3>Catatan Umum</h3>
+
+            <textarea
+            id="catatan"
+            rows="5"
+            placeholder="Masukkan catatan..."></textarea>
+
+        </div>
+
+        <!-- Tombol -->
+
+        <button
+        type="button"
+        id="btnSimpan">
+
+            Simpan
+
+        </button>
+
+    </form>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

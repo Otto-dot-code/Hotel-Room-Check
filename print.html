@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Room Check</title>
+
+<link rel="stylesheet" href="print.css">
+
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>Hotel Room Check</h2>
+
+<p>SISTEM PENGECEKAN KAMAR</p>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Input</a></li>
+
+<li><a href="database.html">Database</a></li>
+
+<li><a class="active" href="print.html">Print</a></li>
+
+</ul>
+
+</nav>
+
+<!-- Container -->
+
+<div class="container">
+
+<h1>Print Laporan</h1>
+
+<div class="filter">
+
+<div>
+
+<label>Tanggal</label>
+
+<input type="date" id="tanggalPrint">
+
+</div>
+
+<div>
+
+<label>Pilih Lantai</label>
+
+<select id="lantaiPrint">
+
+<option value="Semua">Semua Lantai</option>
+
+<option value="1">Lantai 1</option>
+
+<option value="2">Lantai 2</option>
+
+<option value="3">Lantai 3</option>
+
+<option value="4">Lantai 4</option>
+
+</select>
+
+</div>
+
+</div>
+
+<div class="buttonGroup">
+
+<button onclick="previewPrint()">
+
+Preview
+
+</button>
+
+<button onclick="window.print()">
+
+Print
+
+</button>
+
+</div>
+
+<hr>
+
+<div id="printArea">
+
+<h2 align="center">
+
+Laporan Pengecekan Kamar
+
+</h2>
+
+<div id="hasilPrint">
+
+</div>
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+
+window.onload=function(){
+
+previewPrint();
+
+}
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hotel Room Check</title>
+
+<link rel="stylesheet" href="database.css">
+
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<h2>Hotel Room Check</h2>
+<p>SISTEM PENGECEKAN KAMAR</p>
+
+</div>
+
+<ul>
+
+<li><a href="index.html">Input</a></li>
+
+<li><a class="active" href="database.html">Database</a></li>
+
+<li><a href="print.html">Print</a></li>
+
+</ul>
+
+</nav>
+
+<!-- ================= CONTAINER ================= -->
+
+<div class="container">
+
+<div class="top">
+
+<div class="filter">
+
+<button onclick="filterData('Semua')">
+
+Semua
+
+</button>
+
+<button onclick="filterData('1')">
+
+Lantai 1
+
+</button>
+
+<button onclick="filterData('2')">
+
+Lantai 2
+
+</button>
+
+<button onclick="filterData('3')">
+
+Lantai 3
+
+</button>
+
+<button onclick="filterData('4')">
+
+Lantai 4
+
+</button>
+
+</div>
+
+<button class="hapusSemua"
+
+onclick="hapusSemua()">
+
+Hapus Semua
+
+</button>
+
+</div>
+
+<div class="judul">
+
+<h2 id="judulLantai">
+
+Semua Lantai
+
+</h2>
+
+<span id="jumlahData">
+
+0 kamar dicek
+
+</span>
+
+</div>
+
+<div id="databaseList">
+
+</div>
+
+</div>
+
+<script src="app.js"></script>
+
+<script>
+
+window.onload=function(){
+
+tampilkanDatabase("Semua");
+
+}
+
+</script>
+
+</body>
+</html>
