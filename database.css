@@ -87,6 +87,10 @@ align-items:center;
 
 margin-bottom:20px;
 
+  flex-wrap:wrap;
+
+    gap:10px;
+
 }
 
 .filter{
@@ -244,6 +248,44 @@ padding:10px 20px;
 border-radius:8px;
 
 cursor:pointer;
+
+}
+
+/* ===========================
+   RESPONSIVE HP
+=========================== */
+
+@media screen and (max-width:768px){
+
+    .top{
+
+        display:flex;
+        flex-direction:column;
+        align-items:stretch;
+        gap:10px;
+
+    }
+
+    .filter{
+
+        display:flex;
+        flex-wrap:wrap;
+        gap:10px;
+
+    }
+
+    .filter button{
+
+        flex:1;
+        min-width:90px;
+
+    }
+
+    .hapusSemua{
+
+        width:100%;
+
+    }
 
 }
 
